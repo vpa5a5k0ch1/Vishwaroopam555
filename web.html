@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Samples</title>
+
+    <!-- Tailwind cSS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Zain Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+        * {
+            font-family: "Zain", "Poppins", sans-serif;
+        }
+    </style> 
+</head>
+
+<body class="bg-black h-screen">
+
+    <div class=" flex items-center h-screen justify-center gap-6">
+      
+    <h3 id="demo"class="text-5xl text-blue-400">
+        VISHNUPRASAD  
+        </h3>
+        <!-- inline -->
+        <button id="b1"class="bg-white p-2"type="button" onclick='document.getElementById("demo")
+                .innerHTML = "VP"' >
+            Abbreviate
+       </button>
+       
+       <button class="bg-white p-2"type="button" onclick="myFun()"> Expand </button>
+
+       <button class="bg-white p-2"type="button" onclick="getID()"> Combine </button>
+    </div>
+    <!-- Internal -->
+    <script>
+        function myFun() {
+            document.getElementById("demo")
+                .innerHTML = "VISHNUPRASAD";
+        }
+    </script>
+    <script src="script.js"></script>
+
+    </section>
+    
+</body>
+</html>
